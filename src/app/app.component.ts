@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import data from '../assets/dataStruct.json'; // Import the JSON from local dir
 
 @Component({
   selector: 'app-root',
@@ -7,4 +8,5 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'Mini Project';
+  badgeData: any = data; // Assign the JSON to the badgeData property
 }
