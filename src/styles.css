@@ -1,1 +1,27 @@
-/* You can add global styles to this file, and also import other style files */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+
+* {
+  font-family: 'Roboto', sans-serif;
+}
+
+.center {
+  text-align: center;
+}
+
+.bold {
+  font-weight: bold;
+}
+
+.mat-card-header-text{
+  width: 100% !important;
+}
+
+.card-container-right{
+  display: inline;
+  float: right;
+}
+
+.card-container-left{
+  display: inline;
+  font-weight: bold;
+}
