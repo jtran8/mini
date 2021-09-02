@@ -1,2 +1,17 @@
-<h1>{{ title }}</h1>
-<app-badges></app-badges>
+<h1 class="center">{{ title }}</h1>
+
+<!--
+Uses *ngFor directive to iterate through badgeData property,
+creates a material card for each badge which is placed in a
+material grid tile.
+-->
+<mat-grid-list cols = "4" rowHeight="100px">
+  <mat-grid-tile *ngFor="let badge of badgeData.content">
+    <mat-card>
+      <mat-card-header>
+        <mat-card-title class="card-container-left">{{ badge._badge.name }}</mat-card-title>
+        <mat-card-title class="card-container-right">{{ badge._badge.value }} {{ badge._badge.unit }}</mat-card-title>
+      </mat-card-header>
+    </mat-card>
+  </mat-grid-tile>
+</mat-grid-list>
