@@ -1,0 +1,13 @@
+<h2>Metrics</h2>
+<table id="metrics">
+	<tr>
+		<th>Name</th>
+		<th>Value</th>
+		<th>Unit</th>
+	</tr>
+	<tr *ngFor="let badge of badgeData.content">
+		<td>{{ badge._badge.name }}</td>
+		<td>{{ badge._badge.value }}</td>
+		<td>{{ badge._badge.unit }}</td>
+	</tr>
+</table>
